@@ -6,7 +6,7 @@
 
 ## Technologies Used
 
-* CSharp
+* C#
 * .NET 6
 * MSTest
 
@@ -18,7 +18,6 @@
 *The application will return the total cost of the order.
 
 *Pierre offers the following deals:
-
   * Bread: Buy 2, get 1 free (every 3rd loaf of bread is free.). A single loaf costs $5, two loaves costs $10, and three loaves cost $10.
   * Pastry: Buy 1 for $2 or 3 for $5. Four pastries costs $7, five pastries costs $9, and six pastries costs $10.
 
@@ -26,15 +25,10 @@
 
 ## Setup/Installation Requirements
 
-* Clone this repo & navigate to the root directory
+* clone this repo & navigate to the Bakery directory
 * open a command line prompt
 * build the project using $dotnet build
 * execute code with $dotnet run
-
-dev note:
-* to run tests, cd to the ProjectTests folder
-* enter $dotnet test to run tests
-* keep all dots in names, dont forget to update .gitignore
 
 ## Known Bugs
 
