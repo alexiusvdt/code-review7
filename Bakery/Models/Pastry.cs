@@ -2,10 +2,10 @@ using System;
 
 namespace Bakery.Models
 {
-  public class Bread
+  public class Pastry
   {
-
-    // properties, methods, etc. will go here.
+    int PastryCount{ get; set;}
+    
 
   }
 }
