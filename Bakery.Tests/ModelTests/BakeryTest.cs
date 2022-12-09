@@ -19,5 +19,10 @@ namespace Bakery.Tests
       int custBread = 5;
       Assert.AreEqual(20, Bread.BreadTotal(5));
     }
+        [TestMethod]
+    public void BreadClass_CalculatesFirstDiscount_Bread()
+    {
+      int custBread = 4;
+      Assert.AreEqual(15, Bread.BreadTotal(4));    }
   }
 }
