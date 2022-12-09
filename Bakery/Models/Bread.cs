@@ -10,11 +10,11 @@ namespace Bakery.Models
 
     public static int BreadTotal(int custBread)
     {
-      Bread.CostPerLoaf = 5;
+      CostPerLoaf = 5;
       if (custBread % 3 == 0)
       {
-        Bread.BreadCount = custBread - (custBread/3);
-        Bread.BreadSubtotal = BreadCount * BreadCount;
+        BreadCount = custBread - (custBread/3);
+        BreadSubtotal = BreadCount * CostPerLoaf;
       }
       else
       {
