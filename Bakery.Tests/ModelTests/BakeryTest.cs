@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Bakery.Models;
+using MyProgram;
 
 namespace Bakery.Tests
 {
@@ -42,6 +43,21 @@ namespace Bakery.Tests
       int custPastry = 300;
       Assert.AreEqual(500, Pastry.PastryTotal(custPastry));
     }
-
+  }
+  [TestClass]
+  public class ProgramTest
+  {
+    [TestMethod]
+    public void  TestAssembleOrder_BreadAndPastry()
+    {
+    Assert.AreEqual(15, Program.AssembleOrder(1, 6));
+    }
+    [TestMethod]
+    public void TestValidation_Program()
+    {
+    string done = "Y";
+    Assert.AreEqual(true, Program.IsValid(done));
+    Assert.AreEqual(true, Program.IsValid("N"));
+    }
   }
 }
