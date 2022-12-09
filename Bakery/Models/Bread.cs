@@ -17,7 +17,11 @@ namespace Bakery.Models
       }
       else if (custBread % 3 == 2)
       {
-        BreadCount = custBread - ((custBread - 2)/3);
+        BreadCount = custBread - ((custBread - 2) / 3 );
+      }
+      else 
+      {
+        BreadCount = custBread - ((custBread - 1) / 3 );
       }
       BreadSubtotal = BreadCount * CostPerLoaf;
       return BreadSubtotal;
