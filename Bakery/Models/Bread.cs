@@ -13,7 +13,7 @@ namespace Bakery.Models
       CostPerLoaf = 5;
       if (custBread % 3 == 0)
       {
-        BreadCount = custBread - (custBread/3);
+        BreadCount = custBread - (custBread / 3);
       }
       else if (custBread % 3 == 2)
       {
