@@ -19,10 +19,24 @@ namespace Bakery.Tests
       int custBread = 5;
       Assert.AreEqual(20, Bread.BreadTotal(5));
     }
-        [TestMethod]
+    [TestMethod]
     public void BreadClass_CalculatesFirstDiscount_Bread()
     {
       int custBread = 4;
-      Assert.AreEqual(15, Bread.BreadTotal(4));    }
+      Assert.AreEqual(15, Bread.BreadTotal(4)); 
+    }
+  }
+  
+  [TestClass]
+  public class PastryTests
+  {
+    // Test methods will go here, this is just an example
+    [TestMethod]
+    public void PastryClass_CalculatesdDiscount_Pastry()
+    {
+      int custPastry = 6;
+      Assert.AreEqual(10, Pastry.PastryTotal(6));
+    }
+
   }
 }
