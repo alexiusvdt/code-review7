@@ -7,7 +7,7 @@ namespace MyProgram {
     public static void Main(){
       Console.WriteLine();
       Console.WriteLine("Bonjour! Today we sell bread at $5 (buy two, the third is free!) and pastries starting at $2 (every third is half off!)");
-      Console.WriteLine("===================================================================================================================");
+      Console.WriteLine("=======================================================================================================================");
       bool finished = false;
       // loop to reset order
       while (finished == false) 
