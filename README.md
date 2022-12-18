@@ -28,6 +28,14 @@
 * build the project using $dotnet build
 * execute code with $dotnet run
 
+## To Execute Tests
+
+* clone the repo and/or navigate to the Bakery.Tests directory
+* open a command line prompt
+* enter $dotnet restore
+* enter $dotnet test
+
+
 ## Known Bugs
 
 * If you find additional bugs not listed here, please email me at alex.johnson293@gmail.com with the subject **[_Repo Name_] Bug** and include:
