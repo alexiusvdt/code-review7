@@ -26,6 +26,12 @@ namespace Bakery.Tests
       int custBread = 4;
       Assert.AreEqual(15, Bread.BreadTotal(custBread)); 
     }
+    [TestMethod]
+    public void BreadClass_CalculatesHighCount_Bread()
+    {
+      int custBread = 10;
+      Assert.AreEqual(35, Bread.BreadTotal(custBread)); 
+    }
   }
   
   [TestClass]
@@ -43,6 +49,11 @@ namespace Bakery.Tests
       int custPastry = 300;
       Assert.AreEqual(500, Pastry.PastryTotal(custPastry));
     }
+    public void PastryClass_CheckHighPastryCount_Pastry()
+    {
+      int custPastry = 10;
+      Assert.AreEqual(17, Pastry.PastryTotal(custPastry));
+    }
   }
   [TestClass]
   public class ProgramTest
@@ -50,8 +61,34 @@ namespace Bakery.Tests
     [TestMethod]
     public void  TestAssembleOrder_BreadAndPastry()
     {
+    Assert.AreEqual(12, Program.AssembleOrder(1, 4));
+    }
+    [TestMethod]
+    public void  TestAssembleOrder_OnlyBread()
+    {
+    Assert.AreEqual(10, Program.AssembleOrder(3, 0));
+    }
+    [TestMethod]
+    public void  TestAssembleOrder_OnlyPastry()
+    {
+    Assert.AreEqual(5, Program.AssembleOrder(0, 3));
+    }
+    [TestMethod]
+    public void  TestAssembleOrder_BreadAndPastry2()
+    {
+    Assert.AreEqual(0, Program.AssembleOrder(0, 0));
+    }
+    [TestMethod]
+    public void  TestAssembleOrder_BreadAndPastry3()
+    {
     Assert.AreEqual(15, Program.AssembleOrder(1, 6));
     }
+    [TestMethod]
+    public void  TestAssembleOrder_BreadAndPastry4()
+    {
+    Assert.AreEqual(52, Program.AssembleOrder(10, 10));
+    }
+
     [TestMethod]
     public void TestValidation_Program()
     {

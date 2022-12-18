@@ -1,7 +1,6 @@
 using System;
 using Bakery.Models;
 
-
 namespace MyProgram {
   public class Program {
     public static void Main(){

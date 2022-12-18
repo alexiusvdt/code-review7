@@ -4,26 +4,28 @@ namespace Bakery.Models
 {
   public class Bread
   {
-    public static int BreadCount { get; set; }
-    public static int CostPerLoaf { get; set; }
-    public static int BreadSubtotal { get; set; }
+    // public int BreadSubtotal { get; set; }
+    public int CostPerLoaf { get; set; }
+    // public static int BreadSubtotal { get; set; }
 
     public static int BreadTotal(int custBread)
     {
-      CostPerLoaf = 5;
+      int CostPerLoaf = 5;
+      int BreadSubtotal = 0;
+
       if (custBread % 3 == 0)
       {
-        BreadCount = custBread - (custBread / 3);
+        BreadSubtotal = (custBread * CostPerLoaf) - ((custBread / 3) * CostPerLoaf);
       }
       else if (custBread % 3 == 2)
       {
-        BreadCount = custBread - ((custBread - 2) / 3 );
+        BreadSubtotal = (custBread * CostPerLoaf) - ((custBread / 3 ) * CostPerLoaf);
       }
-      else 
+      else if (custBread % 3 == 1)
       {
-        BreadCount = custBread - ((custBread - 1) / 3 );
+        BreadSubtotal = (custBread * CostPerLoaf) - ((custBread  / 3 )* CostPerLoaf);
       }
-      BreadSubtotal = BreadCount * CostPerLoaf;
+      // BreadSubtotal = BreadSubtotal * CostPerLoaf;
       return BreadSubtotal;
     }
   }
