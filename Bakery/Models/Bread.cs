@@ -4,9 +4,8 @@ namespace Bakery.Models
 {
   public class Bread
   {
-    // public int BreadSubtotal { get; set; }
     public int CostPerLoaf { get; set; }
-    // public static int BreadSubtotal { get; set; }
+ 
 
     public static int BreadTotal(int custBread)
     {
@@ -23,7 +22,7 @@ namespace Bakery.Models
       }
       else if (custBread % 3 == 1)
       {
-        BreadSubtotal = (custBread * CostPerLoaf) - ((custBread  / 3 )* CostPerLoaf);
+        BreadSubtotal = (custBread * CostPerLoaf) - ((custBread  / 3 ) * CostPerLoaf);
       }
       // BreadSubtotal = BreadSubtotal * CostPerLoaf;
       return BreadSubtotal;

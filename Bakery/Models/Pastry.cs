@@ -11,11 +11,7 @@ namespace Bakery.Models
     public static int PastryTotal(int custPastry)
     {
       CostPerPastry = 2;
-      // old pastry logic
-      // if (custPastry % 3 == 0)
-      // {
-      //   PastrySubtotal = (custPastry * CostPerPastry) - ((custPastry / 3) * 1);
-      // }
+
       if(custPastry % 3 == 0)
       {
         PastrySubtotal = (custPastry * 2) - ((custPastry / 3) * 1);
